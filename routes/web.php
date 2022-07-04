@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ProjectController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,11 +21,7 @@ Route::get('/', function () {
 
 
 // All Projects
-Route::get('/projects', function () {
-    return view('projects.index');
-});
+Route::get('/projects', [ProjectController::class, 'index']);
 
 // Single Project
-Route::get('/project/{project}', function () {
-    return view('projects.show');
-});
+Route::get('/project/{project}', [ProjectController::class, 'show']);
