@@ -34,3 +34,10 @@ Route::get('/tasks', [TaskController::class, 'index']);
 
 // Single Task
 Route::get('/task/{task}', [TaskController::class, 'show']);
+
+
+// All Users
+Route::get('/users', [UserController::class, 'index']);
+
+// Single User
+Route::get('/user/{user}', [UserController::class, 'show']);
