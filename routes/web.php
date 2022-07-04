@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\ProjectController;
+use App\Http\Controllers\TaskController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -25,3 +27,10 @@ Route::get('/projects', [ProjectController::class, 'index']);
 
 // Single Project
 Route::get('/project/{project}', [ProjectController::class, 'show']);
+
+
+// All Tasks
+Route::get('/tasks', [TaskController::class, 'index']);
+
+// Single Task
+Route::get('/task/{task}', [TaskController::class, 'show']);
