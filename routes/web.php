@@ -18,3 +18,13 @@ Route::get('/', function () {
     return view('index');
 });
 
+
+// All Projects
+Route::get('/projects', function () {
+    return view('projects.index');
+});
+
+// Single Project
+Route::get('/project/{project}', function () {
+    return view('projects.show');
+});
