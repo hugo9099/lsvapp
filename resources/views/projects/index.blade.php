@@ -15,7 +15,7 @@
         <!-- Example row of columns -->
         <div class="row">
             @foreach($projects as $project)
-                <div class="col-md-4">
+                <div class="col-md-4 py-4">
                     <h3>{{$project->name}}</h3>
                     <p>{{$project->description}}</p>
                     <p><a class="btn btn-primary" href="/project/{{$project->id}}" role="button">View details &raquo;</a></p>
