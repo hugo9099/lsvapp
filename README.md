@@ -11,5 +11,5 @@ Small App to monitor projects and tasks assigned to users.
 
 
 ### Production Envs
-- [LSV App](https://lsvapp.hugo9099.com/)
+- <a href="https://lsvapp.hugo9099.com/" target="_blank">LSV App</a>
 <br /> Includes data provided in the requirements
