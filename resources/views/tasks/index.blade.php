@@ -37,7 +37,7 @@
                         </a></td>
                     {{--<td>{{$task->project->name}}</td>--}}
                     <td>{{$task->estimated_hours}}</td>
-                    <td>{{($task->deadline) ? $task->deadline : 'N/A'}}</td>
+                    <td>{{($task->deadline) ? date("Y-m-d", strtotime($task->deadline)) : 'N/A'}}</td>
                     <td>{{($task->finished) ? 'Yes' : 'No'}}</td>
                 </tr>
             @endforeach
